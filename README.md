@@ -15,6 +15,10 @@ To enhance realism beyond the original paper, this project features a more dynam
 
 The trained agent successfully learned to apply throttling selectively only when an attack was detected, demonstrating the viability of using RL for intelligent, real-time DDoS defense.
 
+### Related Link
+ - [Simple Descriptions](https://ryusthought.blogspot.com/2025/06/implementing-paper-controlling-ddos.html)
+ - [Description Video(To be added)]
+
 ### Reference
 
 This work is based on the following paper:
