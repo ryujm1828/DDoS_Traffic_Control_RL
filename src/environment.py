@@ -15,7 +15,6 @@ class Terminal:
 
     #프로필 정의
     def set_profile(self, profile_name):
-        """터미널의 행동 프로필과 그에 맞는 파라미터를 설정합니다."""
         self.profile_name = profile_name
 
         if profile_name == 'NormalUser':
