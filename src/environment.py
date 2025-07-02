@@ -40,11 +40,9 @@ class Terminal:
             return rate
 
         elif profile == 'VideoUser':
-            # 꾸준한 트래픽에 약간의 변동성 추가
             return max(0, np.random.normal(params['rate'], params['variability']))
 
         elif profile == 'Attacker':
-            # 항상 고정된 높은 트래픽
             return params['rate']
 
         return 0.0
