@@ -268,11 +268,10 @@ class DDoSEnvironment:
         self.server.total_traffic = sum(c.total_traffic for c in self.server.children)
         self.server.legitimate_traffic = sum(c.legitimate_traffic for c in self.server.children)
 
-        # 2. 보상 계산 (논문 Algorithm 1 단순화 버전)
+        # 2. 보상 계산
         reward = 0
         server_overloaded = self.server.total_traffic > self.server_capacity_upper_bound
 
-        # 모든 에이전트는 동일한 글로벌 보상을 받을 수 있음
         for leader in self.team_leaders:
             # 팀 리더가 과부하이고 서버 전체도 과부하이면 페널티
             hypothetical_bound = self.server_capacity_upper_bound / len(self.team_leaders)
